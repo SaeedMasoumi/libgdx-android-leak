@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/button"
+        android:text="Leak memory in fragment"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/button"
+        android:id="@+id/button2"
+        android:text="Leak memory in activity"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
