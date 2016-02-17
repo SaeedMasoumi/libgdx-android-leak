@@ -18,7 +18,11 @@ So these references should not exist after the end of their expected lifetime. S
         Gdx.graphics = null;
         Gdx.net = null;
 ```
-In `onDestroy` method of activties/fragments to avoid memory leak.
+In `onDestroy` method of activties/fragments to avoid memory leak. 
+
+And Leak Canary will not show any memory leaks related to libgdx:
+
+<img src="https://github.com/SaeedMasoumi/libgdx-android-leak/blob/master/images/no-leak.png" width="500">
 
 [AndroidFragmentApplication]: <https://github.com/libgdx/libgdx/blob/master/backends/gdx-backend-android/src/com/badlogic/gdx/backends/android/AndroidFragmentApplication.java#L234>
 [AndroidApplication]: <https://github.com/libgdx/libgdx/blob/master/backends/gdx-backend-android/src/com/badlogic/gdx/backends/android/AndroidApplication.java#L287>
